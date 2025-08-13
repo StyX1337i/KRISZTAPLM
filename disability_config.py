@@ -4,7 +4,7 @@ DISABILITY_THRESHOLDS = {
     'SEVERE': 0.7,      # Score > 0.7 = Dizabilitate severă
     'MODERATE': 0.5,    # Score 0.5-0.7 = Dizabilitate moderată  
     'LIGHT': 0.3,       # Score 0.3-0.5 = Dizabilitate ușoară
-    'NONE': 0.3         # Score ≤ 0.3 = Fără dizabilități
+    'NONE': 0.2         # Score ≤ 0.2 = Fără dizabilități
 }
 
 # Cum se combină diferitele scoruri pentru scorul final
@@ -40,7 +40,6 @@ MOVEMENT_ANALYSIS = {
 REPORTING_CONFIG = {
     'include_raw_features': True,     # Include caracteristicile brute în JSON
     'include_risk_factors': True,     # Include factorii de risc identificați
-    'include_recommendations': True,  # Include recomandările specifice
     'include_cluster_analysis': True, # Include analiza cluster-elor
     'save_visual_report': True,       # Salvează raportul vizual
     'save_individual_plots': False    # Salvează plot-urile individuale (opțional)
@@ -54,56 +53,12 @@ DISABILITY_COLORS = {
     'NONE': 'green'     # Fără dizabilități
 }
 
-# Mesajele pentru diferitele niveluri de dizabilitate
+# Mesajele pentru diferitele niveluri de dizabilitate (doar titluri)
 DISABILITY_MESSAGES = {
-    'HIGH': {
-        'title': '🔴 DIZABILITATE SEVERĂ',
-        'description': 'Necesită atenție imediată și evaluare medicală',
-        'urgency': 'URGENT'
-    },
-    'MEDIUM': {
-        'title': '🟠 DIZABILITATE MODERATĂ', 
-        'description': 'Necesită monitorizare și evaluare',
-        'urgency': 'IMPORTANT'
-    },
-    'LOW': {
-        'title': '🟡 DIZABILITATE UȘOARĂ',
-        'description': 'Necesită monitorizare ușoară',
-        'urgency': 'ATENȚIE'
-    },
-    'NONE': {
-        'title': '🟢 FĂRĂ DIZABILITĂȚI',
-        'description': 'Comportament normal, fără intervenție necesară',
-        'urgency': 'NORMAL'
-    }
-}
-
-# Recomandările pentru fiecare nivel
-RECOMMENDATIONS = {
-    'HIGH': [
-        'Evaluare medicală imediată',
-        'Monitorizare constantă',
-        'Posibilă intervenție terapeutică',
-        'Consultare cu specialist'
-    ],
-    'MEDIUM': [
-        'Monitorizare periodică',
-        'Evaluare de urgență dacă se agravează',
-        'Intervenție preventivă',
-        'Urmărire medicală'
-    ],
-    'LOW': [
-        'Monitorizare ușoară',
-        'Verificare periodică',
-        'Intervenție minimală',
-        'Atenție la agravare'
-    ],
-    'NONE': [
-        'Comportament normal',
-        'Verificare de rutină',
-        'Fără intervenție necesară',
-        'Monitorizare standard'
-    ]
+    'HIGH': '🔴 DIZABILITATE SEVERĂ',
+    'MEDIUM': '🟠 DIZABILITATE MODERATĂ',
+    'LOW': '🟡 DIZABILITATE UȘOARĂ',
+    'NONE': '🟢 FĂRĂ DIZABILITĂȚI'
 }
 
 def validate_config():

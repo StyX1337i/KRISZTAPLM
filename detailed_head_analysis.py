@@ -17,6 +17,7 @@ from sklearn.manifold import TSNE
 from sklearn.decomposition import PCA
 from scipy.spatial.distance import cdist
 from scipy.stats import entropy
+from disability_config import DISABILITY_MESSAGES
 
 #sageti pentru a arata directia in care se uita subiectul
 #se creeaza o sageata 3D cu coordonatele de start si end
@@ -741,8 +742,7 @@ def save_detailed_results(disability_assessment, all_person_features):
             'status': result['status'],
             'disability_level': result['disability_level'],
             'final_score': result['final_score'],
-            'risk_factors': result['risk_factors'],
-            'recommendations': result['recommendations']
+            'risk_factors': result['risk_factors']
         }
     
     with open('disability_summary.json', 'w', encoding='utf-8') as f:
@@ -1016,16 +1016,16 @@ def analyze_person_disability(all_person_features):
         # Status bazat pe scorul final
         if disability_score > 0.7:
             status = 'HIGH'
-            disability_level = 'SEVERĂ'
+            disability_level = DISABILITY_MESSAGES['HIGH']
         elif disability_score > 0.5:
             status = 'MEDIUM'
-            disability_level = 'MODERATĂ'
+            disability_level = DISABILITY_MESSAGES['MEDIUM']
         elif disability_score > 0.3:
             status = 'LOW'
-            disability_level = 'UȘOARĂ'
+            disability_level = DISABILITY_MESSAGES['LOW']
         else:
             status = 'NONE'
-            disability_level = 'FĂRĂ'
+            disability_level = DISABILITY_MESSAGES['NONE']
         
         # Verifică și corectează scorurile finale pentru a evita NaN
         final_score_clean = disability_score
@@ -1067,31 +1067,7 @@ def analyze_person_disability(all_person_features):
         if norm_scores['norm_consistency'] > 0.7:
             disability_assessment[person_id]['risk_factors'].append('INCONSISTENȚĂ ÎNTRE SCENARII')
         
-        # Adaugă recomandări specifice
-        if status == 'HIGH':
-            disability_assessment[person_id]['recommendations'] = [
-                'Necesită evaluare medicală imediată',
-                'Monitorizare constantă',
-                'Posibilă intervenție terapeutică'
-            ]
-        elif status == 'MEDIUM':
-            disability_assessment[person_id]['recommendations'] = [
-                'Monitorizare periodică',
-                'Evaluare de urgență dacă se agravează',
-                'Intervenție preventivă'
-            ]
-        elif status == 'LOW':
-            disability_assessment[person_id]['recommendations'] = [
-                'Monitorizare ușoară',
-                'Verificare periodică',
-                'Intervenție minimală'
-            ]
-        else:
-            disability_assessment[person_id]['recommendations'] = [
-                'Comportament normal',
-                'Verificare de rutină',
-                'Fără intervenție necesară'
-            ]
+        # Nu mai adăugăm recomandări
     
     return disability_assessment
 
@@ -1129,7 +1105,6 @@ def create_disability_report(disability_assessment):
             print(f"    Consistența: {result['consistency_score']:.3f}")
             if result['risk_factors']:
                 print(f"    Factorii de risc: {', '.join(result['risk_factors'])}")
-            print(f"    Recomandări: {' | '.join(result['recommendations'])}")
             print()
     
     # Afișează persoanele cu dizabilități moderate
@@ -1144,7 +1119,6 @@ def create_disability_report(disability_assessment):
             print(f"    Consistența: {result['consistency_score']:.3f}")
             if result['risk_factors']:
                 print(f"    Factorii de risc: {', '.join(result['risk_factors'])}")
-            print(f"    Recomandări: {' | '.join(result['recommendations'])}")
             print()
     
     # Afișează persoanele cu dizabilități ușoare
@@ -1159,7 +1133,6 @@ def create_disability_report(disability_assessment):
             print(f"    Consistența: {result['consistency_score']:.3f}")
             if result['risk_factors']:
                 print(f"    Factorii de risc: {', '.join(result['risk_factors'])}")
-            print(f"    Recomandări: {' | '.join(result['recommendations'])}")
             print()
     
     # Afișează persoanele fără dizabilități
@@ -1172,7 +1145,6 @@ def create_disability_report(disability_assessment):
             print(f"    Nivel: {result['disability_level']}")
             print(f"    Distanța: {result['distance_score']:.3f} | Mahalanobis: {result['mahalanobis_score']:.3f}")
             print(f"    Consistența: {result['consistency_score']:.3f}")
-            print(f"    Recomandări: {' | '.join(result['recommendations'])}")
             print()
     
     # Statistici generale

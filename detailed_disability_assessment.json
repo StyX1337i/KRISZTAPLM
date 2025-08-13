@@ -1,5 +1,5 @@
 {
-  "analysis_timestamp": "2025-08-13T13:15:28",
+  "analysis_timestamp": "2025-08-13T15:34:41",
   "total_persons": 13,
   "methodology": {
     "pca_components": "95% variance retained",
@@ -21,15 +21,10 @@
         "consistency_score": 14.887927968220291,
         "final_score": 0.544397721926889,
         "status": "MEDIUM",
-        "disability_level": "MODERATĂ",
+        "disability_level": "🟠 DIZABILITATE MODERATĂ",
         "disability": true,
         "risk_factors": [
           "INCONSISTENȚĂ ÎNTRE SCENARII"
-        ],
-        "recommendations": [
-          "Monitorizare periodică",
-          "Evaluare de urgență dacă se agravează",
-          "Intervenție preventivă"
         ]
       },
       "raw_features": [
@@ -169,15 +164,10 @@
         "consistency_score": 15.346842409237304,
         "final_score": 0.5947376126791177,
         "status": "MEDIUM",
-        "disability_level": "MODERATĂ",
+        "disability_level": "🟠 DIZABILITATE MODERATĂ",
         "disability": true,
         "risk_factors": [
           "INCONSISTENȚĂ ÎNTRE SCENARII"
-        ],
-        "recommendations": [
-          "Monitorizare periodică",
-          "Evaluare de urgență dacă se agravează",
-          "Intervenție preventivă"
         ]
       },
       "raw_features": [
@@ -317,15 +307,10 @@
         "consistency_score": 14.92970337692792,
         "final_score": 0.5680533551487169,
         "status": "MEDIUM",
-        "disability_level": "MODERATĂ",
+        "disability_level": "🟠 DIZABILITATE MODERATĂ",
         "disability": true,
         "risk_factors": [
           "INCONSISTENȚĂ ÎNTRE SCENARII"
-        ],
-        "recommendations": [
-          "Monitorizare periodică",
-          "Evaluare de urgență dacă se agravează",
-          "Intervenție preventivă"
         ]
       },
       "raw_features": [
@@ -465,15 +450,10 @@
         "consistency_score": 15.36749291469638,
         "final_score": 0.6056016571808354,
         "status": "MEDIUM",
-        "disability_level": "MODERATĂ",
+        "disability_level": "🟠 DIZABILITATE MODERATĂ",
         "disability": true,
         "risk_factors": [
           "INCONSISTENȚĂ ÎNTRE SCENARII"
-        ],
-        "recommendations": [
-          "Monitorizare periodică",
-          "Evaluare de urgență dacă se agravează",
-          "Intervenție preventivă"
         ]
       },
       "raw_features": [
@@ -613,15 +593,10 @@
         "consistency_score": 16.027242194512052,
         "final_score": 0.6574121780468692,
         "status": "MEDIUM",
-        "disability_level": "MODERATĂ",
+        "disability_level": "🟠 DIZABILITATE MODERATĂ",
         "disability": true,
         "risk_factors": [
           "INCONSISTENȚĂ ÎNTRE SCENARII"
-        ],
-        "recommendations": [
-          "Monitorizare periodică",
-          "Evaluare de urgență dacă se agravează",
-          "Intervenție preventivă"
         ]
       },
       "raw_features": [
@@ -761,15 +736,10 @@
         "consistency_score": 15.15269363417211,
         "final_score": 0.5414978815165991,
         "status": "MEDIUM",
-        "disability_level": "MODERATĂ",
+        "disability_level": "🟠 DIZABILITATE MODERATĂ",
         "disability": true,
         "risk_factors": [
           "INCONSISTENȚĂ ÎNTRE SCENARII"
-        ],
-        "recommendations": [
-          "Monitorizare periodică",
-          "Evaluare de urgență dacă se agravează",
-          "Intervenție preventivă"
         ]
       },
       "raw_features": [
@@ -909,14 +879,9 @@
         "consistency_score": 14.641633631221346,
         "final_score": 0.5435932666809825,
         "status": "MEDIUM",
-        "disability_level": "MODERATĂ",
+        "disability_level": "🟠 DIZABILITATE MODERATĂ",
         "disability": true,
-        "risk_factors": [],
-        "recommendations": [
-          "Monitorizare periodică",
-          "Evaluare de urgență dacă se agravează",
-          "Intervenție preventivă"
-        ]
+        "risk_factors": []
       },
       "raw_features": [
         -0.021333333333333353,
@@ -1055,17 +1020,12 @@
         "consistency_score": 17.732483461655757,
         "final_score": 0.7785677300796251,
         "status": "HIGH",
-        "disability_level": "SEVERĂ",
+        "disability_level": "🔴 DIZABILITATE SEVERĂ",
         "disability": true,
         "risk_factors": [
           "COMPORTAMENT ABNORMAL",
           "PATTERN-URI NESTANDARD",
           "INCONSISTENȚĂ ÎNTRE SCENARII"
-        ],
-        "recommendations": [
-          "Necesită evaluare medicală imediată",
-          "Monitorizare constantă",
-          "Posibilă intervenție terapeutică"
         ]
       },
       "raw_features": [
@@ -1205,14 +1165,9 @@
         "consistency_score": 14.761391214351145,
         "final_score": 0.5272190723738931,
         "status": "MEDIUM",
-        "disability_level": "MODERATĂ",
+        "disability_level": "🟠 DIZABILITATE MODERATĂ",
         "disability": true,
-        "risk_factors": [],
-        "recommendations": [
-          "Monitorizare periodică",
-          "Evaluare de urgență dacă se agravează",
-          "Intervenție preventivă"
-        ]
+        "risk_factors": []
       },
       "raw_features": [
         -0.004642857142857139,
@@ -1351,15 +1306,10 @@
         "consistency_score": 16.118878327004637,
         "final_score": 0.6624449754405112,
         "status": "MEDIUM",
-        "disability_level": "MODERATĂ",
+        "disability_level": "🟠 DIZABILITATE MODERATĂ",
         "disability": true,
         "risk_factors": [
           "INCONSISTENȚĂ ÎNTRE SCENARII"
-        ],
-        "recommendations": [
-          "Monitorizare periodică",
-          "Evaluare de urgență dacă se agravează",
-          "Intervenție preventivă"
         ]
       },
       "raw_features": [
@@ -1499,17 +1449,12 @@
         "consistency_score": 21.14634123166582,
         "final_score": 1.0,
         "status": "HIGH",
-        "disability_level": "SEVERĂ",
+        "disability_level": "🔴 DIZABILITATE SEVERĂ",
         "disability": true,
         "risk_factors": [
           "COMPORTAMENT ABNORMAL",
           "PATTERN-URI NESTANDARD",
           "INCONSISTENȚĂ ÎNTRE SCENARII"
-        ],
-        "recommendations": [
-          "Necesită evaluare medicală imediată",
-          "Monitorizare constantă",
-          "Posibilă intervenție terapeutică"
         ]
       },
       "raw_features": [
@@ -1649,17 +1594,12 @@
         "consistency_score": 17.12209075122296,
         "final_score": 0.7342471417174034,
         "status": "HIGH",
-        "disability_level": "SEVERĂ",
+        "disability_level": "🔴 DIZABILITATE SEVERĂ",
         "disability": true,
         "risk_factors": [
           "COMPORTAMENT ABNORMAL",
           "PATTERN-URI NESTANDARD",
           "INCONSISTENȚĂ ÎNTRE SCENARII"
-        ],
-        "recommendations": [
-          "Necesită evaluare medicală imediată",
-          "Monitorizare constantă",
-          "Posibilă intervenție terapeutică"
         ]
       },
       "raw_features": [
@@ -1799,17 +1739,12 @@
         "consistency_score": 17.952943657640475,
         "final_score": 0.7945170416130571,
         "status": "HIGH",
-        "disability_level": "SEVERĂ",
+        "disability_level": "🔴 DIZABILITATE SEVERĂ",
         "disability": true,
         "risk_factors": [
           "COMPORTAMENT ABNORMAL",
           "PATTERN-URI NESTANDARD",
           "INCONSISTENȚĂ ÎNTRE SCENARII"
-        ],
-        "recommendations": [
-          "Necesită evaluare medicală imediată",
-          "Monitorizare constantă",
-          "Posibilă intervenție terapeutică"
         ]
       },
       "raw_features": [
